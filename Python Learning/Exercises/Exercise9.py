@@ -24,7 +24,9 @@ while True:
         break
     elif menu.get(food) is not None:
         cart.append(food)
-    
+    else:
+        print("Sorry that item isn't on the menu.")
+
 for food in cart:
     total += menu.get(food)
     print(food, end=" ")
